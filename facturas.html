@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery UI Droppable - Simple photo manager</title>
+    <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/js.js"></script>
+    <script src="js/handlebars.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="site-outer">
+        <nav class="navbar navbar-fixed-top">
+            <section class="container-fluid">
+                <div class="row">
+                    <div class="container-menu">
+                        <nav class="menu" id="hb">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </nav>
+                        <div class="logotype">
+                            <div class="big hero">GADE</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </nav>
+        
+        <div class="navigation">
+            <div class="navigation-content">
+                <h3>Menu</h3>
+                <ul class="navigation-menu">
+                    <li><a href="./index.html" class="active">Inicio</a></li>
+                    <li><a href="./facturas.html"><i class="red fa fa-circle"></i> Facturas</a></li>
+                    <li><a href="#"><i class="beige fa fa-circle"></i> Albaranes</a></li>
+                    <li><a href="#"><i class="orange fa fa-circle"></i> Presupuestos</a></li>
+                    <li><a href="#"><i class="blue fa fa-circle"></i> Clientes</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="site-inner">
+            <div class="ui-widget ui-helper-clearfix" style="margin-top: 6%">
+    
+                <ul id="gallery" class="gallery ui-helper-reset ui-helper-clearfix">
+                    <li class="ui-widget-content ui-corner-tr">
+                        <h5 class="ui-widget-header">Factura Nº52</h5>
+                        <img src="https://frasesparami.com/wp-content/uploads/2017/06/IMAGENES-DE-RISA-CON-FRASES.jpg"
+                            alt="The peaks of High Tatras" width="96" height="72">
+                        <a href="https://frasesparami.com/wp-content/uploads/2017/06/IMAGENES-DE-RISA-CON-FRASES.jpg"
+                            title="View larger image" class="ui-icon ui-icon-zoomin">View larger</a>
+                        <a href="link/to/trash/script/when/we/have/js/off" title="Delete this image" class="ui-icon ui-icon-trash">Delete
+                            image</a>
+                    </li>
+                    <li class="ui-widget-content ui-corner-tr">
+                        <h5 class="ui-widget-header">Factura Nº572</h5>
+                        <img src="https://frasesparami.com/wp-content/uploads/2017/06/IMAGENES-DE-RISA-CON-FRASES.jpg"
+                            alt="The chalet at the Green mountain lake" width="96" height="72">
+                        <a href="https://frasesparami.com/wp-content/uploads/2017/06/IMAGENES-DE-RISA-CON-FRASES.jpg"
+                            title="View larger image" class="ui-icon ui-icon-zoomin">View larger</a>
+                        <a href="link/to/trash/script/when/we/have/js/off" title="Delete this image" class="ui-icon ui-icon-trash">Delete
+                            image</a>
+                    </li>
+                    <li class="ui-widget-content ui-corner-tr">
+                        <h5 class="ui-widget-header">Factura Nº525</h5>
+                        <img src="https://frasesparami.com/wp-content/uploads/2017/06/IMAGENES-DE-RISA-CON-FRASES.jpg"
+                            alt="Planning the ascent" width="96" height="72">
+                        <a href="https://frasesparami.com/wp-content/uploads/2017/06/IMAGENES-DE-RISA-CON-FRASES.jpg"
+                            title="View larger image" class="ui-icon ui-icon-zoomin">View larger</a>
+                        <a href="link/to/trash/script/when/we/have/js/off" title="Delete this image" class="ui-icon ui-icon-trash">Delete
+                            image</a>
+                    </li>
+                    <li class="ui-widget-content ui-corner-tr">
+                        <h5 class="ui-widget-header">Factura Nº5</h5>
+                        <img src="https://frasesparami.com/wp-content/uploads/2017/06/IMAGENES-DE-RISA-CON-FRASES.jpg"
+                            alt="On top of Kozi kopka" width="96" height="72">
+                        <a href="https://frasesparami.com/wp-content/uploads/2017/06/IMAGENES-DE-RISA-CON-FRASES.jpg"
+                            title="View larger image" class="ui-icon ui-icon-zoomin">View larger</a>
+                        <a href="link/to/trash/script/when/we/have/js/off" title="Delete this image" class="ui-icon ui-icon-trash">Delete
+                            image</a>
+                    </li>
+                </ul>
+    
+                <div id="trash" class="ui-widget-content ui-state-default">
+                    <h4 class="ui-widget-header"><i class="fas fa-copy"></i> Trash</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>
